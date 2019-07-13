@@ -25,7 +25,7 @@ class CashRegister
     items = []
     add_item(title, price, quantity = 1)
     items << title * quantity
-    @items = title
+    @items = items
   end
 
   def items
