@@ -29,8 +29,9 @@ class CashRegister
     @items << title * quantity
   end
 
-  def items
-    @items
+  def items(title)
+    add_item(title, price, quantity = 1)
+    @items << title * quantity
   end
   
 end
