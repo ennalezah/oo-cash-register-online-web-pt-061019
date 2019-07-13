@@ -22,18 +22,6 @@ class CashRegister
       "There is no discount to apply."
     end
   end
-  
-  def items=(title, price, quantity)
-    items = []
-    add_item(title, price, quantity = 1)
-    items << quantity.times_do(title)
-    @items = items
-  end
-
-  # def items
-  #   @items
-  # end
-  
 end
 
 # sale1 = CashRegister.new
