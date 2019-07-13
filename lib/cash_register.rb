@@ -23,8 +23,9 @@ class CashRegister
   
   def items=(title, price, quantity)
     title = []
-    add_item(title, price, quantity)
-    @itms = title
+    add_item(title, price, quantity = 1)
+    title << title * quantity
+    @items = title
   end
 
   def items
