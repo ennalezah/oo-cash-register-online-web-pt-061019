@@ -21,7 +21,7 @@ class CashRegister
     end
   end
   
-  def items=(items)
+  def items=(title, price, quantity)
     @items = items
     @items = []
     binding.pry
@@ -30,8 +30,7 @@ class CashRegister
   end
 
   def items
-    add_item(title, price, quantity = 1)
-    @items << title * quantity
+    @items
   end
   
 end
