@@ -22,11 +22,9 @@ class CashRegister
   end
   
   def items=(title, price, quantity)
-    @items = items
-    @items = []
-    binding.pry
-    self.add_item(title, price, quantity = 1)
-    @items << title * quantity
+    title = []
+    add_item(title, price, quantity)
+    @itms = title
   end
 
   def items
